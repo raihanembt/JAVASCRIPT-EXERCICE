@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <button id="btnAdd">Ajouter un produit</button>
+    <button id="btnCategories">Afficher la liste des catégories</button> 
+    <form id="productForm" class="hidden">
+        <label for="code">Code produit:</label>
+        <input type="number" id="code" required><br>
+        <label for="title">Titre:</label>
+        <input type="text" id="title" required><br>
+        <label for="description">Description:</label>
+        <textarea id="description" required></textarea><br>
+        <label for="price">Prix:</label>
+        <input type="number" id="price" required><br>
+        <label for="category">Catégorie:</label>
+        <select  id="category">
+
+        </select><br>
+        <button type="submit">Sauvegarder</button>
+        <button type="button" id="btnCancel">Annuler</button>
+        <button type="button" id="btnClear">Vider</button>
+    </form>
+
+<button id="btnSupp">Supprimer</button>
+
+<table id="productTable">
+    <thead>
+        <tr>
+            <th>Code produit</th>
+            <th>Titre</th>
+            <th>Description</th>
+            <th>Prix</th>
+            <th>Catégorie</th>
+        </tr>
+    </thead>
+    <tbody></tbody>
+</table>
+<script src="index.js"></script>
+</body>
+</html>    
